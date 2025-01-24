@@ -35,13 +35,24 @@ export default (api: IApi) => {
       fs.writeFileSync(configPath, tailwindConfigJS, 'utf8');
     }
 
-    const tailwindcssPackageName = 'tailwindcss';
+    const tailwindcssPackageName = '@tailwindcss/postcss';
 
     const autoprefixerOptions = api.userConfig.autoprefixer;
 
     config.extraPostCSSPlugins = [
       ...(config.extraPostCSSPlugins || []),
-      require(tailwindcssPackageName)({ config: configPath }),
+      (() => {
+        try {
+          // Attempt to use the new PostCSS plugin
+          return require(tailwindcssPackageName)({ config: configPath });
+        } catch (e) {
+          console.warn(
+            '`@tailwindcss/postcss` not found. Falling back to the older `tailwindcss` PostCSS plugin. Please consider updating your TailwindCSS setup.'
+          );
+          // Fall back to the older TailwindCSS plugin
+          return require('tailwindcss')({ config: configPath });
+        }
+      })(),
       require('autoprefixer')(autoprefixerOptions),
     ];
 

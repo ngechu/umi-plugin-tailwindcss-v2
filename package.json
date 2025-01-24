@@ -1,7 +1,7 @@
 {
-  "name": "umi-plugin-tailwindcss",
-  "version": "4.0.0",
-  "description": "umi@3.0 plugin for tailwindcss",
+  "name": "umi-plugin-tailwindcss-v2",
+  "version": "4.0.2",
+  "description": "umi@3.0 plugin for tailwindcss with future compatibility for tailwind version > 4",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
   "scripts": {
@@ -13,7 +13,7 @@
   ],
   "repository": {
     "type": "git",
-    "url": "https://github.com/dewfall123/umi-plugin-tailwindcss.git"
+    "url": "https://github.com/ngechu/umi-plugin-tailwindcss-v2.git"
   },
   "keywords": [
     "umi",
@@ -22,11 +22,11 @@
     "tailwindcss"
   ],
   "authors": [
-    "zfh"
+    "Ngechu Mungai <ngechu08@gmail.com>"
   ],
   "license": "MIT",
-  "bugs": "https://github.com/dewfall123/umi-plugin-tailwindcss/issues",
-  "homepage": "https://github.com/dewfall123/umi-plugin-tailwindcss",
+  "bugs": "https://github.com/ngechu/umi-plugin-tailwindcss-v2.git/issues",
+  "homepage": "https://github.com/ngechu/umi-plugin-tailwindcss-v2.git",
   "peerDependencies": {
     "umi": "3.x"
   },
@@ -35,7 +35,7 @@
   },
   "dependencies": {
     "autoprefixer": "9.x",
-    "tailwindcss": "latest"
+    "tailwindcss": "^3.4.0"
   },
   "devDependencies": {
     "@rollup/plugin-node-resolve": "^7.1.1",

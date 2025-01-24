@@ -1,6 +1,7 @@
-# umi-plugin-tailwindcss
+# umi-plugin-tailwindcss-v2
 
-> This plugin is only valid for umijs 3.x，Umi4 has built-in support for Tailwindcss and is no longer needed for new projects. [umi4 tailwind-css doc](https://umijs.org/docs/guides/generator#tailwind-css-%E9%85%8D%E7%BD%AE%E7%94%9F%E6%88%90%E5%99%A8)
+> This plugin is only valid for umijs 3.x，Umi4 has built-in support for Tailwindcss and is no longer needed for new projects. I have locked the tailwind version to 3.4.0 for now to prevent breaking changes.
+> [umi4 tailwind-css doc](https://umijs.org/docs/guides/generator#tailwind-css-%E9%85%8D%E7%BD%AE%E7%94%9F%E6%88%90%E5%99%A8)
 
 [中文文档](https://github.com/dewfall123/umi-plugin-tailwindcss/blob/master/README.CN.md)
 
@@ -9,13 +10,13 @@
 Using npm:
 
 ```bash
-$ npm install umi-plugin-tailwindcss -D
+$ npm install umi-plugin-tailwindcss-v2 -D
 ```
 
 or using yarn:
 
 ```bash
-$ yarn add umi-plugin-tailwindcss -D
+$ yarn add umi-plugin-tailwindcss-v2 -D
 ```
 
 ## Setup
